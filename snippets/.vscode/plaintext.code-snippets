@@ -648,6 +648,140 @@
 		],
 		"description": "historyのguiテンプレート"
 	},
+	"namevarTemp":{
+		"prefix": "namevarTemp",
+		"body":[			
+			"$1 {",
+			"\ttype: namevar;",
+			"",
+			"\tnamevar: $2",
+			"",
+			"\tx: $3;",
+			"\ty: $4;",
+			"\twidth: $5;",
+			"\theight: $6;",
+			"}"
+		],
+		"description": "namevarのプレビュー領域のguiテンプレート"
+	},
+	"charTemp":{
+		"prefix": "charTemp",
+		"body":[			
+			"$1 {",
+			"\ttype: char;",
+			"",
+			"\tnamevar: $2",
+			"",
+			"\tmsg: $3;",
+			"",
+			"\tmax: $4",
+			"",
+			"\tx: $5;",
+			"\ty: $6;",
+			"\twidth: $7;",
+			"\theight: $8;",
+			"",
+			"\tpointse: $9",
+			"",
+			"\tclickse: $10",
+			"}"
+		],
+		"description": "namevarの文字ボタンのguiテンプレート"
+	},
+	"charOKTemp":{
+		"prefix": "charOKTemp",
+		"body":[			
+			"$1 {",
+			"\ttype: char;",
+			"",
+			"\tnamevar: $2",
+			"",
+			"\tmsg: [ok];",
+			"",
+			"\tmax: $3",
+			"",
+			"\tx: $4;",
+			"\ty: $5;",
+			"\twidth: $6;",
+			"\theight: $7;",
+			"",
+			"\tpointse: $8",
+			"",
+			"\tclickse: $9",
+			"}"
+		],
+		"description": "namevarの決定ボタンのguiテンプレート"
+	},
+	"charClearTemp":{
+		"prefix": "charClearTemp",
+		"body":[			
+			"$1 {",
+			"\ttype: char;",
+			"",
+			"\tnamevar: $2",
+			"",
+			"\tmsg: [clear];",
+			"",
+			"\tmax: $3",
+			"",
+			"\tx: $4;",
+			"\ty: $5;",
+			"\twidth: $6;",
+			"\theight: $7;",
+			"",
+			"\tpointse: $8",
+			"",
+			"\tclickse: $9",
+			"}"
+		],
+		"description": "namevarのクリアボタンのguiテンプレート"
+	},
+	"charBackspaceTemp":{
+		"prefix": "charBackspaceTemp",
+		"body":[			
+			"$1 {",
+			"\ttype: char;",
+			"",
+			"\tnamevar: $2",
+			"",
+			"\tmsg: [backspace];",
+			"",
+			"\tmax: $3",
+			"",
+			"\tx: $4;",
+			"\ty: $5;",
+			"\twidth: $6;",
+			"\theight: $7;",
+			"",
+			"\tpointse: $8",
+			"",
+			"\tclickse: $9",
+			"}"
+		],
+		"description": "namevarの一文字消去ボタンのguiテンプレート"
+	},
+	"galleryTemp":{
+		"prefix": "galleryTemp",
+		"body":[			
+			"$1 {",
+			"\ttype: gallery;",
+			"",
+			"\tlabel: $2",
+			"",
+			"\tvar: $3",
+			"",
+			"\tx: $4;",
+			"\ty: $5;",
+			"\twidth: $6;",
+			"\theight: $7;",
+			"",
+			"\tpointse: $8",
+			"",
+			"\tclickse: $9",
+			"}"
+		],
+		"description": "CG鑑賞モードの各CGに進むボタンのguiテンプレート"
+	},
 
 	//wms
 	"func":{
