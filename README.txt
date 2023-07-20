@@ -15,7 +15,10 @@ suika2はktabata氏およびSuika2 Development Teamの方々によって開発�
 
 このスニペットに関する不具合はこつ子(@KotukoHumibana)にお伝えください。
 
-ver1.2
+英語版についても対応予定です。
+各種スニペットの説明部分の翻訳案募集中です
+
+ver1.3
 
 変更履歴
 2023/06/11 GitHubで公開
