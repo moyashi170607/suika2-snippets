@@ -17,8 +17,8 @@
 	},
 	"cha":{
 		"prefix": ["@cha","@キャラ移動"],
-		"body": "@キャラ position=$1 duration=$2 acceleration=$3 x=$4 Y=$5 alpha=$6",
-		"description": "キャラ移動 @キャラ移動 位置 ファイル (秒) (エフェクト) (右オフセット) (下オフセット) (アルファ)"
+		"body": "@キャラ移動 位置=$1 秒=$2 加速=$3 x=$4 Y=$5 アルファ=$6",
+		"description": "キャラ移動 @キャラ移動 位置 ファイル (秒) (エフェクト) (x) (y) (アルファ)"
 	},
 	"chapter":{
 		"prefix": ["@chapter","@章"],
@@ -49,7 +49,7 @@
 	},
 	"chsx-all":{
 		"prefix": ["@chsx-all","@場面転換X-all"],
-		"body": "@場面転換X @場面転換X 中央=$1 中央X=$2 中央Y=$3 右=$4 右X=$5 右Y=$6 左=$7 左X=$8 左Y=$9 背面=$10 背面X=$11 背面Y=$12 背景=$13 背景X=$14 背景Y=$15 エフェクト=$16 秒=$17",
+		"body": "@場面転換X 中央=$1 中央X=$2 中央Y=$3 右=$4 右X=$5 右Y=$6 左=$7 左X=$8 左Y=$9 背面=$10 背面X=$11 背面Y=$12 背景=$13 背景X=$14 背景Y=$15 エフェクト=$16 秒=$17",
 		"description": "背景・立ち絵・位置を一括で変更します。引数名は省略不可・順不同"
 	},
 	"click":{
@@ -106,7 +106,7 @@
 	},
 	"shake":{
 		"prefix": ["@shake","@振動"],
-		"body": "@振動 direction=$1 秒=$2 回数=$3 大きさ=$4",
+		"body": "@振動 方向=$1 秒=$2 回数=$3 大きさ=$4",
 		"description": "画面を揺らす @振動 [方向] [秒] [回数] [大きさ]"
 	},
 	"skip":{
@@ -278,7 +278,7 @@
 	},
 	"slit-close":{
 		"prefix": ["slit-close"],
-		"body": "slit-open",
+		"body": "slit-close",
 		"description": "エフェクト：スリットが閉じるような効果"
 	},
 	"slit-open-v":{
@@ -635,7 +635,7 @@
 		"prefix": "loadTemp",
 		"body": [
 			"$1 {",
-			"\ttype: save;",
+			"\ttype: load;",
 			"",
 			"\tindex: $2",
 			"",
@@ -1003,6 +1003,13 @@
 			"s2_reflect_$1_config();"
 		],
 		"description": "指定した要素の設定を反映する"
+	},
+	"s2_reflect_font_config":{
+		"prefix": "s2_reflect_font_config();",
+		"body":[
+			"s2_reflect_font_config();"
+		],
+		"description": "フォントを更新する"
 	},
 	"s2_reflect_msgbox_and_namebox_config":{
 		"prefix": "s2_reflect_msgbox_and_namebox_config();",

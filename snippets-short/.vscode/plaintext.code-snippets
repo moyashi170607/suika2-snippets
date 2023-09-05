@@ -274,7 +274,7 @@
 	},
 	"slit-close":{
 		"prefix": ["slit-close"],
-		"body": "slit-open",
+		"body": "slit-close",
 		"description": "エフェクト：スリットが閉じるような効果"
 	},
 	"slit-open-v":{
@@ -630,7 +630,7 @@
 		"prefix": "loadTemp",
 		"body": [
 			"$1 {",
-			"\ttype: save;",
+			"\ttype: load;",
 			"",
 			"\tindex: $2",
 			"",
@@ -999,6 +999,13 @@
 			"s2_reflect_$1_config();"
 		],
 		"description": "指定した要素の設定を反映する"
+	},
+	"s2_reflect_font_config":{
+		"prefix": "s2_reflect_font_config();",
+		"body":[
+			"s2_reflect_font_config();"
+		],
+		"description": "フォントを更新する"
 	},
 	"s2_reflect_msgbox_and_namebox_config":{
 		"prefix": "s2_reflect_msgbox_and_namebox_config();",
